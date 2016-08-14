@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="thithiapplication.hepto.com.thithiapplication.MainActivity"
+    android:textAlignment="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtxtDate"
+            android:hint="Enter Date"
+            android:inputType="date"
+            android:editable="false"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtxtTime"
+            android:hint="Enter Time"
+            android:inputType="time"
+            android:editable="false"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCalcStarBirthday"
+            android:text="Star Birthday upto 2020"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customborder"
+            android:layout_marginTop="20dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtxtName"
+                android:hint="Enter Name"
+                android:inputType="text"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCalcStarBirthdaySave"
+                android:text="Save"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customborder"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layoutAutoComplete"
+            android:visibility="gone"
+            >
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actxtName"
+                android:hint="Select Name"
+                android:inputType="text"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCalcStarBirthdayView"
+                android:text="View Star Birthday"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
